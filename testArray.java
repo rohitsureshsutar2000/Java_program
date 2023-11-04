@@ -39,6 +39,7 @@ public class testArray {
 //	    	arr1.stream().forEach(System.out::println);
 	        arr1=acceptArr(arr);
 	        arr1.stream().forEach(System.out::println);
+		arr=arr1
 	    }
 //	    arr1.stream().forEach(System.out::println);
 	    return arr1;
