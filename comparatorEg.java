@@ -40,21 +40,27 @@ class Student
 
 public class comparatorEg {	
 	public static void main(String[] args) {
-		Comparator<Student> com= new Comparator<Student>()
-		{
+		
+//		Comparator<Student> com= new Comparator<Student>()
+//		{
+//
+//			@Override
+//			
+//			
+//			public int compare(Student o1, Student o2)
+				{
+//				if (o1.getId()>o2.getId())
+//					return 1;
+//				else if(o1.getId()==o2.getId())
+//					return 0;
+//				else
+//					return -1;
+//				}
+//		};		==========	OR  ============
+		
+		
+		Comparator<Student> com=(o1,o2)-> o1.getId()>o2.getId()?1:-1;
 
-			@Override
-			public int compare(Student o1, Student o2) {
-				if (o1.getId()>o2.getId())
-					return 1;
-				else if(o1.getId()==o2.getId())
-					return 0;
-				else
-					return -1;
-			}
-			
-
-		};
 		
 		List<Student> lst=new ArrayList<>();
 		lst.add(new Student(10,"raj"));
@@ -71,4 +77,4 @@ public class comparatorEg {
 
 	}
 
-}
+}}
