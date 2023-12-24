@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>RiderLogin</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-dark bg-dark">
+		 <a class="navbar-brand" href="#">Navbar</a>
+		   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   			 <ul class="navbar-nav mr-auto">
+      		 <li class="nav-item active">
+        		<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      		  </li>
+      		 <li class="nav-item">
+        		<a class="nav-link" href="#">Link</a>
+     		 </li>
+     		 </ul>
+		</nav>
+		<form action="LoginRiderServlet" method="post">
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Email address</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" name="userN" aria-describedby="emailHelp" placeholder="Enter email">
+		    
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Password</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" name="passW" placeholder="Password">
+		  </div>
+		  
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</body>
+</html>
