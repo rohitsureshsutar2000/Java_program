@@ -6,14 +6,14 @@ import java.sql.SQLException;
 
 public class DBmanager {
 	static Connection conn=null;
-	public static Connection getConnection()
+	public static Connection getMyConnection()
 	{
 		if(conn==null)
 		{
 			try {
 				DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
-				String conString="jdbc:mysql://192.168.10.150:3306/dac41?useSSL=false";
-				conn=DriverManager.getConnection(conString,"dac41","welcome");
+				String conString="jdbc:mysql://localhost:3306/dummy?useSSL=false";
+				conn=DriverManager.getConnection(conString,"root","welcome");
 				
 				
 			} catch (SQLException e) {
@@ -24,5 +24,16 @@ public class DBmanager {
 		}
 		
 		return conn;
+	}
+	public static void closeMyConnection() {
+		if(conn!=null)
+		{
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 }

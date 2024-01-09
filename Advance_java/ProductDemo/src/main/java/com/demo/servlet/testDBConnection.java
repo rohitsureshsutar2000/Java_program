@@ -9,7 +9,7 @@ public class testDBConnection {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Connection conn=DBmanager.getConnection();
+		Connection conn=DBmanager.getMyConnection();
 		if(conn!=null)
 		{
 			System.out.println("Connection Done");
