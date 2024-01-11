@@ -4,11 +4,11 @@
   <hibernate-mapping>
   <class name="com.demo.model.RiderStatus" table="RiderStatus">
     <id name="rider_id">
-    <generator class="assigned"></generator>
+    <generator class="increment"></generator> <!--  -->
     </id>
     <property name="status_id" type="int"></property>
-     <property name="bike" type="String"></property>
-     <property name="expense" type="String"></property>
+     <property name="bike" type="string"></property>
+     <property name="expense" type="string"></property>
      
   </class>
   

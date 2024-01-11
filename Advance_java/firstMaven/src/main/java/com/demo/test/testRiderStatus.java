@@ -27,6 +27,7 @@ public class testRiderStatus {
 		s.save(rs1);
 		s.save(rs2);
 		t.commit();
+		s.close();
 		
 	}
 
