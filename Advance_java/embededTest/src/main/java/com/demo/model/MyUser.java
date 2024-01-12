@@ -1,19 +1,19 @@
 package com.demo.model;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
-@Entity
+@Entity(name="enbaddedtabletest")
 
 public class MyUser {
 	@Id
 	private int id;
 	private String name;
-//	@OneToOne						//get single table no join query 
-	@OneToOne(fetch=FetchType.LAZY)			//display  two tables using join query 
-	private Address addr;
+	@Embedded
+	private Address addrId;
 	public MyUser() {
 		super();
 	}
@@ -21,7 +21,7 @@ public class MyUser {
 		super();
 		this.id = id;
 		this.name = name;
-		this.addr = addr;
+		this.addrId = addr;
 	}
 	
 	public int getId() {
@@ -37,14 +37,14 @@ public class MyUser {
 		this.name = name;
 	}
 	public Address getAddr() {
-		return addr;
+		return addrId;
 	}
 	public void setAddr(Address addr) {
-		this.addr = addr;
+		this.addrId = addr;
 	}
 	@Override
 	public String toString() {
-		return "MyUser [id=" + id + ", name=" + name + ", addr=" + addr + "]";
+		return "MyUser [id=" + id + ", name=" + name + ", addr=" + addrId + "]";
 	}
 	
 	

@@ -1,11 +1,12 @@
 package com.demo.model;
 
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+@Embeddable
 public class Address {
-	@Id
+	
 	private int addrId;
 	private String street;
 	private String city;
