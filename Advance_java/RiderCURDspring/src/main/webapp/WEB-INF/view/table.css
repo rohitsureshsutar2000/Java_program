@@ -4,6 +4,8 @@
                         .panel{
                             background: linear-gradient(to right, #2980b9, #2c3e50);
                             padding: 0;
+                            margin:7%;
+                            margin-left:4%;
                             border-radius: 10px;
                             border: none;
                             box-shadow: 0 0 0 5px rgba(0,0,0,0.05),0 0 0 10px rgba(0,0,0,0.05);
