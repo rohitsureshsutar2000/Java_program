@@ -59,4 +59,10 @@ public class DaoImpl implements Dao {
 				jdbctemp.update(x, new Object[] {newstatus_id,startpoint,endpoint,dt,des,newroute_id}) ;
 	}
 
+	@Override
+	public void deletebyId(int newroute_id) {
+		jdbctemp.update("delete from Pillion_route_details where route_id=?",new Object[] {newroute_id});
+		
+	}
+
 }

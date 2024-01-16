@@ -53,5 +53,11 @@ public class ServiceImpl implements PillionService{
 		dao.updateP(newroute_id,newstatus_id,startpoint,endpoint,dt,des);
 	}
 
+	@Override
+	public void deletebyId(String route_id) {
+		int newroute_id=Integer.parseInt(route_id);
+		dao.deletebyId(newroute_id);
+	}
+
 
 }

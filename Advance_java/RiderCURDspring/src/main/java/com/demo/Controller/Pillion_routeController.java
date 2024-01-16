@@ -64,6 +64,12 @@ public class Pillion_routeController {
 		return new ModelAndView("redirect:/pillionlist");
 	}
 	
-	
+	@GetMapping("/deleteform/{route_id}")
+	public ModelAndView deleteByid(@PathVariable String route_id)
+	{
+		serv.deletebyId(route_id);
+		
+		return new ModelAndView("redirect:/pillionlist");
+	}
 	
 }

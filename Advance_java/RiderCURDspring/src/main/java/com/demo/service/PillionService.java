@@ -16,4 +16,8 @@ public interface PillionService {
 	void updateP(String rid, String status_id, String startpoint, String endpoint, Date dt,
 			String des);
 
+	
+
+	void deletebyId(String route_id);
+
 }

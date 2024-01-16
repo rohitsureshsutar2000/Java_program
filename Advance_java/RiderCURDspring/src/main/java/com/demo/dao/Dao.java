@@ -15,5 +15,7 @@ public interface Dao {
 
 	void updateP(int newroute_id, int newstatus_id, String startpoint, String endpoint, Date dt,
 			String des);
+
+	void deletebyId(int newroute_id);
 	
 }
