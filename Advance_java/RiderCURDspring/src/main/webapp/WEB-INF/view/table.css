@@ -15,6 +15,15 @@
                             border-radius: 10px 10px 0 0;
                             margin: 0;
                         }
+                        .btn-pink-moon {
+						    background: #ec008c;  /* fallback for old browsers */
+						    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+						    background: linear-gradient(to right, #fc6767, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+						    color: #fff;
+						    border: 3px solid #eee;
+						    ;
+						}
+						
                         .panel .panel-heading .title{
                             color: rgb(128, 0, 255);
                             font-size: 28px;
@@ -45,6 +54,14 @@
                             border-radius: 20px;
                             display: inline-block;
                             transition: all 0.3s ease 0s;
+                        }
+/*                         body{ */
+/*                         background-color: #4158D0; */
+/* 						background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+/*                         } */
+                        .container{
+                        background-color: #4158D0;
+						background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
                         }
                         .panel .panel-heading .form-control:focus{
                             background-color: rgba(255,255,255,0.2);

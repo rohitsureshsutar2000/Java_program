@@ -54,9 +54,9 @@
 		                                <td>${p.description }</td>
 		                                <td>
 		                                    <ul class="action-list">
-		                                        <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
-		                                        <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
-		                                    </ul>
+	 		                                        <li><a href="editform/${p.route_id}" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+	 		                                        <li><a href="deleteform/${p.route_id}" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+			                                </ul> 
 		                                </td>
 		                            </tr>
 		                        </tbody>
@@ -64,10 +64,14 @@
 	
 		                    </table>
 		                </div>
+		                <div class="col btn btn-pink-moon" style=" align:"center">
+		                <a href="form1" >Add Route</a>
+		                </div>
 		                
 		            </div>
 		        </div>
 		    </div>
+		    
 		</div>
 		
 </body>

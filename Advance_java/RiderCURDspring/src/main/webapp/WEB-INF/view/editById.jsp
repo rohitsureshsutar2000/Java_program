@@ -20,11 +20,11 @@
    <div class="card-body">
    
    
-    <form action="formData" method="Get">
+    <form action="updateform" method="Get">
      <div class="form-group row">
       <label for="firstName" class="col-sm-2 col-form-label" >Route_id</label>
       <div class="col-sm-7">
-       <input type="text" class="form-control"  name="rid" />
+       <input type="text" class="form-control"  name="rid"  value="${p.route_id}" readonly />
       </div>
      </div>
 
@@ -32,7 +32,7 @@
       <label for="lastName" class="col-sm-2 col-form-label" >Status_id</label>
       <div class="col-sm-7">
        <input type="text" class="form-control" name="status_id"
-        placeholder="Enter last name">
+        value="${p.status_id}">
       </div>
      </div>
 
@@ -40,7 +40,7 @@
       <label for="lastName" class="col-sm-2 col-form-label">Start Point</label>
       <div class="col-sm-7">
        <input type="text" class="form-control" name="startpoint"
-        placeholder="Enter user name">
+        value="${p.start_point}">
       </div>
      </div>
 
@@ -48,7 +48,7 @@
       <label for="lastName" class="col-sm-2 col-form-label">End Point</label>
       <div class="col-sm-7">
        <input type="text" class="form-control" name="endpoint"
-        placeholder="Enter Password">
+        value="${p.end_point}">
       </div>
      </div>
 
@@ -56,7 +56,7 @@
       <label for="lastName" class="col-sm-2 col-form-label">Date</label>
       <div class="col-sm-7">
        <input type="date" class="form-control" name="dt"
-        placeholder="Enter Address">
+        >
       </div>
      </div>
 
@@ -65,7 +65,7 @@
        No</label>
       <div class="col-sm-7">
        <input type="description" class="form-control" name="des"
-        placeholder="Enter Contact Address">
+        value="${p.description}">
       </div>
      </div>
 
@@ -76,3 +76,9 @@
   </div>
 
  </div>
+ 
+ 
+ </body>
+ 
+ </html>
+ 
