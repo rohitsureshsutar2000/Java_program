@@ -20,7 +20,7 @@
    <div class="card-body">
    
    
-    <form action="updateform" method="Get">
+    <form action="/RiderCURDspring/updateform" method="Post">
      <div class="form-group row">
       <label for="firstName" class="col-sm-2 col-form-label" >Route_id</label>
       <div class="col-sm-7">

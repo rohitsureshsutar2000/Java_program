@@ -57,7 +57,7 @@ public class Pillion_routeController {
 		return new ModelAndView("editById","p",p);
 	}
 	
-	@GetMapping("/updateform")
+	@PostMapping("/updateform")
 	public ModelAndView displaForm2(@RequestParam String rid,@RequestParam String status_id,@RequestParam String startpoint,@RequestParam String endpoint ,@RequestParam Date dt,@RequestParam String des)
 	{
 		serv.updateP(rid,status_id,startpoint,endpoint,dt,des);

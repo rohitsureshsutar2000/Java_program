@@ -55,7 +55,7 @@ public class DaoImpl implements Dao {
 	@Override
 	public void updateP(int newroute_id, int newstatus_id, String startpoint, String endpoint, Date dt,
 			String des) {
-				String x="update Pillion_route_details set status_id=?, start_point=?, end_point=?, travel_date=? description=? where route_id=?";
+				String x="update Pillion_route_details set status_id=?, start_point=?, end_point=?, travel_date=?, description=? where route_id=?";
 				jdbctemp.update(x, new Object[] {newstatus_id,startpoint,endpoint,dt,des,newroute_id}) ;
 	}
 
